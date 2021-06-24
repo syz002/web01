@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 父元素称之为容器， 子元素称之为项目 items
+            flex布局分主轴和侧轴（交叉轴）
+            通过设置容器的flex相关属性，控制子元素(项目的排列方式)
+            flex布局容器内的元素默认伪块元素
+            float、clear、垂直对齐相关属性失效
+
+            flex-direction:容器内主轴设置
+            justify-content:设置项目在主轴的上的排列方式
+
+         */
+        .box {
+            display: flex;
+            width: 80%;
+            background-color: thistle;
+            height: 600px;
+            flex-direction: column;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+
+        }
+        span {
+            width: 200px;
+            height: 100px;
+            background-color: yellowgreen;
+            font-size: 40px;
+        }
+
+        span:nth-child(2) {
+            width: 200px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+
+        span:nth-child(3) {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+        span:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

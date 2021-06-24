@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       
+        .box {
+            display: flex;
+            width: 900px;
+            background-color: thistle;
+            /* flex-direction: row; */
+            height:600px;
+            justify-content: space-between;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+
+            /* flex-wrap: wrap; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            align-content: space-between;
+            flex-flow: row wrap;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            font-size: 40px;
+        }
+
+        span:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        span:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        span:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+        span:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        span:nth-child(6) {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        span:nth-child(7) {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        span:nth-child(8) {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        
+    </div>
+</body>
+
+</html>
